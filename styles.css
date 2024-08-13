@@ -1,0 +1,72 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+.container img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.container h1 {
+    font-size: 2em;
+    margin: 0;
+    animation: glow 2s infinite;
+    text-shadow: 0 0 10px #1DB954, 0 0 20px #1DB954, 0 0 30px #1DB954;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 40px; /* Adjusted margin for more space */
+    padding: 10px 20px;
+    background-color: #1DB954;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 0 10px #1DB954, 0 0 20px #1DB954, 0 0 30px #1DB954;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 1;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #1DB954, 0 0 20px #1DB954, 0 0 30px #1DB954;
+    }
+    50% {
+        text-shadow: 0 0 20px #1DB954, 0 0 30px #1DB954, 0 0 40px #1DB954;
+    }
+    100% {
+        text-shadow: 0 0 10px #1DB954, 0 0 20px #1DB954, 0 0 30px #1DB954;
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
